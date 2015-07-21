@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014BF5CB1B5DC6AD00AFE971 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014BF5CA1B5DC6AD00AFE971 /* HeaderView.xib */; };
 		01ADE40A1B55F4340090D77C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ADE4091B55F4340090D77C /* Foundation.framework */; };
 		01ADE40C1B55F4340090D77C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ADE40B1B55F4340090D77C /* CoreGraphics.framework */; };
 		01ADE40E1B55F4340090D77C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ADE40D1B55F4340090D77C /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		014BF5CA1B5DC6AD00AFE971 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		01ADE4061B55F4340090D77C /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01ADE4091B55F4340090D77C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		01ADE40B1B55F4340090D77C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,6 +94,7 @@
 				01ADE43F1B55FB820090D77C /* BNRItemStore.m */,
 				01ADE4381B55F47D0090D77C /* BNRItemsViewController.h */,
 				01ADE4391B55F47D0090D77C /* BNRItemsViewController.m */,
+				014BF5CA1B5DC6AD00AFE971 /* HeaderView.xib */,
 				01ADE40F1B55F4340090D77C /* Homepwner */,
 				01ADE4281B55F4340090D77C /* HomepwnerTests */,
 				01ADE4081B55F4340090D77C /* Frameworks */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				014BF5CB1B5DC6AD00AFE971 /* HeaderView.xib in Resources */,
 				01ADE4141B55F4340090D77C /* InfoPlist.strings in Resources */,
 				01ADE41C1B55F4340090D77C /* Images.xcassets in Resources */,
 			);
@@ -456,6 +460,7 @@
 				01ADE4341B55F4340090D77C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01ADE4351B55F4340090D77C /* Build configuration list for PBXNativeTarget "HomepwnerTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +469,7 @@
 				01ADE4371B55F4340090D77C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
