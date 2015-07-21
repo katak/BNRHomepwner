@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRDetailViewController">
             <connections>
-                <outlet property="dateField" destination="Cjr-tI-KDY" id="AWS-yz-2mO"/>
+                <outlet property="dateLabel" destination="Cjr-tI-KDY" id="zkj-Ze-yvA"/>
                 <outlet property="nameField" destination="a71-Ti-Ups" id="fM1-5w-fQb"/>
                 <outlet property="serialNumberField" destination="YvR-QL-65n" id="Z25-wE-snr"/>
                 <outlet property="valueField" destination="2QF-tB-hRG" id="Ds9-Bb-wdE"/>

@@ -134,7 +134,10 @@
 {
     BNRDetailViewController *detailViewController = [[BNRDetailViewController alloc] init];
     
-    // Push it onto the top of the navigation controller's stack
+    // Give detail view controller a pointer to the item object in row
+    BNRItem *selectedItem = [[[BNRItemStore sharedStore] allItems] objectAtIndex:indexPath.row];
+    detailViewController.item = selectedItem;
+    
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
