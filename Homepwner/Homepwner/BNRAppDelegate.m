@@ -19,7 +19,8 @@
     BNRItemsViewController *itemsViewController = [[BNRItemsViewController alloc] init];
     
     // Place BNRItemsViewController's table view in the window hierarchy
-    self.window.rootViewController = itemsViewController;
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
+    self.window.rootViewController = navigationController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
