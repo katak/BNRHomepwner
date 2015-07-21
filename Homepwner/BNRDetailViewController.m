@@ -61,5 +61,4 @@
     _item = item;
     self.navigationItem.title = _item.itemName;
 }
-
 @end
