@@ -1,6 +1,6 @@
 //
 //  BNRItemStore.m
-//  Homepwner
+//  ;;;
 //
 //  Created by Kris Kata on 7/14/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
@@ -8,6 +8,7 @@
 
 #import "BNRItemStore.h"
 #import "BNRItem.h"
+#import "BNRImageStore.h"
 
 @interface BNRItemStore()
 
@@ -65,6 +66,10 @@
 
 - (void)removeItem:(BNRItem *)item
 {
+    NSString *key = item.itemKey;
+    
+    [[BNRImageStore sharedStore] deleteImageForKey:key];
+    
     [self.privateItems removeObjectIdenticalTo:item];
 }
 
