@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRDetailViewController">
             <connections>
+                <outlet property="cameraButton" destination="CEz-VA-GfQ" id="7e1-54-wTm"/>
                 <outlet property="dateLabel" destination="Cjr-tI-KDY" id="zkj-Ze-yvA"/>
                 <outlet property="nameField" destination="a71-Ti-Ups" id="fM1-5w-fQb"/>
                 <outlet property="serialNumberField" destination="YvR-QL-65n" id="Z25-wE-snr"/>
@@ -50,8 +51,8 @@
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a71-Ti-Ups">
-                    <rect key="frame" x="70" y="95" width="230" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a71-Ti-Ups">
+                    <rect key="frame" x="70" y="96" width="230" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
