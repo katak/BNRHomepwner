@@ -47,6 +47,15 @@
     return self;
 }
 
+- (NSString *)imagePathForKey:(NSString *)key
+{
+    NSArray *documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    NSString *documentDirectory = [documentDirectories firstObject];
+    
+    return [documentDirectory  stringByAppendingPathComponent:key];
+}
+
 - (void)setImage:(UIImage *)image forKey:(NSString *)key
 {
     self.dictionary[key] = image;
