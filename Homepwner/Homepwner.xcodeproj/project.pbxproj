@@ -25,6 +25,8 @@
 		01ADE43A1B55F47D0090D77C /* BNRItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ADE4391B55F47D0090D77C /* BNRItemsViewController.m */; };
 		01ADE43D1B55F9AA0090D77C /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ADE43C1B55F9AA0090D77C /* BNRItem.m */; };
 		01ADE4401B55FB820090D77C /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ADE43F1B55FB820090D77C /* BNRItemStore.m */; };
+		01FABC7A1B758A3B0034936A /* BNRItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FABC791B758A3B0034936A /* BNRItemCell.m */; };
+		01FABC7C1B758ACA0034936A /* BNRItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01FABC7B1B758ACA0034936A /* BNRItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,9 @@
 		01ADE43C1B55F9AA0090D77C /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRItem.m; path = ../BNRItem.m; sourceTree = "<group>"; };
 		01ADE43E1B55FB820090D77C /* BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRItemStore.h; path = ../BNRItemStore.h; sourceTree = "<group>"; };
 		01ADE43F1B55FB820090D77C /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRItemStore.m; path = ../BNRItemStore.m; sourceTree = "<group>"; };
+		01FABC781B758A3B0034936A /* BNRItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemCell.h; sourceTree = "<group>"; };
+		01FABC791B758A3B0034936A /* BNRItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemCell.m; sourceTree = "<group>"; };
+		01FABC7B1B758ACA0034936A /* BNRItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +144,9 @@
 				01868D731B5DE0FD00B148B7 /* BNRDetailViewController.xib */,
 				01ADE41B1B55F4340090D77C /* Images.xcassets */,
 				01ADE4101B55F4340090D77C /* Supporting Files */,
+				01FABC781B758A3B0034936A /* BNRItemCell.h */,
+				01FABC791B758A3B0034936A /* BNRItemCell.m */,
+				01FABC7B1B758ACA0034936A /* BNRItemCell.xib */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01868D751B5DE0FD00B148B7 /* BNRDetailViewController.xib in Resources */,
+				01FABC7C1B758ACA0034936A /* BNRItemCell.xib in Resources */,
 				01ADE4141B55F4340090D77C /* InfoPlist.strings in Resources */,
 				01ADE41C1B55F4340090D77C /* Images.xcassets in Resources */,
 			);
@@ -270,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01868D741B5DE0FD00B148B7 /* BNRDetailViewController.m in Sources */,
+				01FABC7A1B758A3B0034936A /* BNRItemCell.m in Sources */,
 				01ADE4401B55FB820090D77C /* BNRItemStore.m in Sources */,
 				017CD2EC1B5F387E00C5BFB2 /* BNRImageStore.m in Sources */,
 				01ADE43A1B55F47D0090D77C /* BNRItemsViewController.m in Sources */,
