@@ -24,8 +24,7 @@
                     <rect key="frame" x="20" y="99" width="46" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="21" id="FfP-Dx-6a8"/>
-                        <constraint firstAttribute="width" constant="46" id="IRM-jW-na7"/>
+                        <constraint firstAttribute="width" constant="46" id="JGM-IA-uPq"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -35,8 +34,7 @@
                     <rect key="frame" x="20" y="137" width="43" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="43" id="MLE-sV-35b"/>
-                        <constraint firstAttribute="height" constant="21" id="p7Y-sv-8RU"/>
+                        <constraint firstAttribute="width" constant="43" id="GvA-TU-aS0"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
@@ -45,8 +43,7 @@
                     <rect key="frame" x="20" y="175" width="42" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="42" id="WOb-Bb-Pkd"/>
-                        <constraint firstAttribute="height" constant="21" id="gen-4V-zm9"/>
+                        <constraint firstAttribute="width" constant="42" id="vUq-N0-dnY"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
@@ -81,9 +78,6 @@
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjr-tI-KDY">
                     <rect key="frame" x="20" y="209" width="280" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="K6f-rk-32M"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
