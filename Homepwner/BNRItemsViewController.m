@@ -62,7 +62,7 @@
     cell.valueLabel.text = [NSString stringWithFormat:@"$%d", item.valueInDollars];
     
     cell.thumbnailView.image = item.thumbnail;
-    
+
     return cell;
 }
 
