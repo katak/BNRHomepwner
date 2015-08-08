@@ -11,8 +11,12 @@
 #import "BNRItemStore.h"
 #import "BNRItem.h"
 #import "BNRItemCell.h"
+#import "BNRImageStore.h"
+#import "BNRImageViewController.h"
 
-@interface BNRItemsViewController ()
+@interface BNRItemsViewController () <UIPopoverControllerDelegate>
+
+@property (strong, nonatomic) UIPopoverController *imagePopover;
 
 @end
 
@@ -63,7 +67,45 @@
     
     cell.thumbnailView.image = item.thumbnail;
 
+    cell.actionBlock = ^{
+        NSLog(@"Going to show image for %@", item);
+        
+        if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+            NSString *itemKey = item.itemKey;
+            
+            // If there is no image, we don't need to display anything
+            UIImage *img = [[BNRImageStore sharedStore] imageForKey:itemKey];
+            if (!img) {
+                return;
+            }
+            
+            // Make a rectangle for the frame of the thumbnail relative to
+            // our table view
+            // Note: there will be a warning on this line that we'll soon discuss
+            CGRect rect = [self.view convertRect:cell.thumbnailView.bounds
+                                        fromView:cell.thumbnailView];
+            
+            // Create a new BNRImageViewController and set its image
+            BNRImageViewController *ivc = [[BNRImageViewController alloc] init];
+            ivc.image = img;
+            
+            // Present a 600x600 popover from the rect
+            self.imagePopover = [[UIPopoverController alloc] initWithContentViewController:ivc];
+            self.imagePopover.delegate = self;
+            self.imagePopover.popoverContentSize = CGSizeMake(600,600);
+            [self.imagePopover presentPopoverFromRect:rect
+                                               inView:self.view
+                             permittedArrowDirections:UIPopoverArrowDirectionAny
+                                             animated:YES];
+        }
+    };
+    
     return cell;
+}
+
+- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
+{
+    self.imagePopover = nil;
 }
 
 - (void)viewDidLoad

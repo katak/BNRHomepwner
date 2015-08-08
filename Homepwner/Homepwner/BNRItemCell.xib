@@ -47,17 +47,31 @@
                             <constraint firstAttribute="width" constant="40" id="HyD-Ks-i5l"/>
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdT-a4-pUQ">
+                        <rect key="frame" x="2" y="2" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="showImage:" destination="HTY-rO-nGS" eventType="touchUpInside" id="W6z-ee-Djz"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="oxe-zI-fr3" firstAttribute="top" secondItem="emo-nI-kEN" secondAttribute="top" constant="1" id="1XU-na-pzj"/>
                     <constraint firstItem="oxe-zI-fr3" firstAttribute="leading" secondItem="8ZP-35-wEr" secondAttribute="trailing" constant="8" id="4za-MN-yWb"/>
                     <constraint firstItem="r2b-3r-uUI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oxe-zI-fr3" secondAttribute="bottom" constant="5" id="5p2-mC-xLw"/>
+                    <constraint firstItem="8ZP-35-wEr" firstAttribute="leading" secondItem="SdT-a4-pUQ" secondAttribute="leading" id="9fb-1F-Dim"/>
+                    <constraint firstItem="8ZP-35-wEr" firstAttribute="trailing" secondItem="SdT-a4-pUQ" secondAttribute="trailing" id="DgC-yn-h6R"/>
+                    <constraint firstItem="8ZP-35-wEr" firstAttribute="bottom" secondItem="SdT-a4-pUQ" secondAttribute="bottom" id="IcB-nR-CH0"/>
                     <constraint firstAttribute="bottom" secondItem="r2b-3r-uUI" secondAttribute="bottom" constant="1" id="Q9A-Y2-4W6"/>
                     <constraint firstItem="r2b-3r-uUI" firstAttribute="leading" secondItem="8ZP-35-wEr" secondAttribute="trailing" constant="8" id="QNk-Cz-d5t"/>
                     <constraint firstAttribute="centerY" secondItem="8ZP-35-wEr" secondAttribute="centerY" id="RVJ-Ph-6wU"/>
                     <constraint firstItem="oTG-4E-hsH" firstAttribute="leading" secondItem="oxe-zI-fr3" secondAttribute="trailing" constant="8" id="YFr-km-66Z"/>
                     <constraint firstAttribute="centerY" secondItem="oTG-4E-hsH" secondAttribute="centerY" id="ge1-mu-mrS"/>
                     <constraint firstItem="oTG-4E-hsH" firstAttribute="leading" secondItem="r2b-3r-uUI" secondAttribute="trailing" constant="8" id="kwh-oC-M7D"/>
+                    <constraint firstItem="8ZP-35-wEr" firstAttribute="top" secondItem="SdT-a4-pUQ" secondAttribute="top" id="lNu-rg-rjT"/>
                     <constraint firstAttribute="trailing" secondItem="oTG-4E-hsH" secondAttribute="trailing" constant="20" id="pap-P5-r5G"/>
                     <constraint firstItem="8ZP-35-wEr" firstAttribute="leading" secondItem="emo-nI-kEN" secondAttribute="leading" constant="2" id="wfi-Xb-8qr"/>
                 </constraints>
