@@ -21,6 +21,11 @@
     
     // Place BNRItemsViewController's table view in the window hierarchy
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
+    
+    // Give the navigation controller a restoration identifier that is
+    // the same name as the class
+    navigationController.restorationIdentifier = NSStringFromClass([navigationController class]);
+    
     self.window.rootViewController = navigationController;
     
     self.window.backgroundColor = [UIColor whiteColor];
@@ -60,6 +65,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application shouldSaveApplicationState:(NSCoder *)coder
+{
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application shouldRestoreApplicationState:(NSCoder *)coder
+{
+    return YES;
 }
 
 @end
