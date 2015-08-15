@@ -22,23 +22,46 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    // Create a BNRItemsViewController
-    BNRItemsViewController *itemsViewController = [[BNRItemsViewController alloc] init];
+    // If state restoration did not occur,
+    // set up the view controller hierarchy
+    if (!self.window.rootViewController) {
+        BNRItemsViewController *itemsViewController = [[BNRItemsViewController alloc] init];
+        
+        // Place BNRItemsViewController's table view in the window hierarchy
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
+        
+        // Give the navigation controller a restoration identifier that is
+        // the same name as the class
+        navigationController.restorationIdentifier = NSStringFromClass([navigationController class]);
+        
+        self.window.rootViewController = navigationController;
+    }
     
-    // Place BNRItemsViewController's table view in the window hierarchy
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:itemsViewController];
-    
-    // Give the navigation controller a restoration identifier that is
-    // the same name as the class
-    navigationController.restorationIdentifier = NSStringFromClass([navigationController class]);
-    
-    self.window.rootViewController = navigationController;
-    
-    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (UIViewController *)application:(UIApplication *)application viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents coder:(NSCoder *)coder
+{
+    // Create a new navigation controller
+    UIViewController *vc = [[UINavigationController alloc] init];
+    
+    // The last object in the path array is the restoration
+    // identifier for this view controller
+    vc.restorationIdentifier = [identifierComponents lastObject];
+    
+    if ([identifierComponents count] == 1) {
+        // If there is only 1 identifier cocmponent, then
+        // this is the root view controller
+        self.window.rootViewController = vc;
+    }
+    else {
+        // Else, it is the navigation controller for a new item,
+        // so you need to set its modal presentation style
+        vc.modalPresentationStyle = UIModalPresentationFormSheet;
+    }
+    
+    return vc;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
