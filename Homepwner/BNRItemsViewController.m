@@ -51,6 +51,11 @@
                selector:@selector(updateTableViewForDynamicTypeSize)
                    name:UIContentSizeCategoryDidChangeNotification
                  object:nil];
+        // Register for locale change notifications
+        [nc addObserver:self
+               selector:@selector(localeChanged:)
+                   name:NSCurrentLocaleDidChangeNotification
+                 object:nil];
     }
     return self;
 }
@@ -123,7 +128,14 @@
     // Configure the cell with the BNRItem
     cell.nameLabel.text = item.itemName;
     cell.serialNumberLabel.text = item.serialNumber;
-    cell.valueLabel.text = [NSString stringWithFormat:@"$%d", item.valueInDollars];
+    
+    // Create a number formatter for currency
+    static NSNumberFormatter *currencyFormatter = nil;
+    if (currencyFormatter == nil) {
+        currencyFormatter = [[NSNumberFormatter alloc] init];
+        currencyFormatter.numberStyle = NSNumberFormatterCurrencyStyle;
+    }
+    cell.valueLabel.text = [currencyFormatter stringFromNumber:@(item.valueInDollars)];
     
     cell.thumbnailView.image = item.thumbnail;
 
@@ -262,6 +274,11 @@
     detailViewController.item = selectedItem;
     
     [self.navigationController pushViewController:detailViewController animated:YES];
+}
+
+- (void)localeChanged:(NSNotification *)note
+{
+    [self.tableView reloadData];
 }
 
 - (void)dealloc
