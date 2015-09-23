@@ -1,0 +1,15 @@
+
+/* Class = "IBUILabel"; text = "Value"; ObjectID = "BSt-Po-rMX"; */
+"BSt-Po-rMX.text" = "Valor";
+
+/* Class = "IBUILabel"; text = "Name"; ObjectID = "BcI-EQ-MWI"; */
+"BcI-EQ-MWI.text" = "Nombre";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Cjr-tI-KDY"; */
+"Cjr-tI-KDY.text" = "Label";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "H2n-pe-2k9"; */
+"H2n-pe-2k9.title" = "Item";
+
+/* Class = "IBUILabel"; text = "Serial"; ObjectID = "URa-DI-DTk"; */
+"URa-DI-DTk.text" = "Numero de serie";
