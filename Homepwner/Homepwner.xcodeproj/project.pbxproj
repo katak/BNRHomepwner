@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		011CA43A1BA250A20012DAB8 /* BNRDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011CA43C1BA250A20012DAB8 /* BNRDetailViewController.xib */; };
+		013835471BB32BF7005F8DF6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 013835491BB32BF7005F8DF6 /* Localizable.strings */; };
 		013854ED1B78F936009B72AA /* Homepwner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 013854EB1B78F936009B72AA /* Homepwner.xcdatamodeld */; };
 		013854F01B78FA58009B72AA /* BNRImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 013854EF1B78FA58009B72AA /* BNRImageTransformer.m */; };
 		013854F31B78FF80009B72AA /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 013854F21B78FF80009B72AA /* BNRItem.m */; };
@@ -46,6 +47,8 @@
 /* Begin PBXFileReference section */
 		011CA43D1BA250E90012DAB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BNRDetailViewController.xib; sourceTree = "<group>"; };
 		011CA43E1BA251250012DAB8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/BNRDetailViewController.strings; sourceTree = "<group>"; };
+		013835481BB32BF7005F8DF6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0138354A1BB32C1E005F8DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		013854EC1B78F936009B72AA /* Homepwner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homepwner.xcdatamodel; sourceTree = "<group>"; };
 		013854EE1B78FA58009B72AA /* BNRImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRImageTransformer.h; sourceTree = "<group>"; };
 		013854EF1B78FA58009B72AA /* BNRImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRImageTransformer.m; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 			children = (
 				013854F41B79319C009B72AA /* BNRAssetTypeViewController.h */,
 				013854F51B79319C009B72AA /* BNRAssetTypeViewController.m */,
+				013835491BB32BF7005F8DF6 /* Localizable.strings */,
 				013854EB1B78F936009B72AA /* Homepwner.xcdatamodeld */,
 				013854F11B78FF80009B72AA /* BNRItem.h */,
 				013854F21B78FF80009B72AA /* BNRItem.m */,
@@ -276,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013835471BB32BF7005F8DF6 /* Localizable.strings in Resources */,
 				011CA43A1BA250A20012DAB8 /* BNRDetailViewController.xib in Resources */,
 				01FABC7C1B758ACA0034936A /* BNRItemCell.xib in Resources */,
 				01ADE4141B55F4340090D77C /* InfoPlist.strings in Resources */,
@@ -340,6 +345,15 @@
 			);
 			name = BNRDetailViewController.xib;
 			sourceTree = SOURCE_ROOT;
+		};
+		013835491BB32BF7005F8DF6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				013835481BB32BF7005F8DF6 /* es */,
+				0138354A1BB32C1E005F8DF6 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
 		};
 		01ADE4121B55F4340090D77C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
